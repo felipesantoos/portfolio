@@ -1,0 +1,22 @@
+.container {
+    padding: .5rem .75rem;
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: black;
+
+    border-radius: 3px;
+
+    &:not(:last-of-type) {
+        margin-right: 1rem;
+    }
+
+    &:hover {
+        background-color: rgb(240, 240, 240);
+    }
+
+    svg {
+        margin-right: 0.25rem;
+    }
+}
