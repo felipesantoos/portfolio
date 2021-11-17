@@ -1,5 +1,5 @@
 .container {
-    padding: .5rem .75rem;
+    padding: 0.5rem 0.75rem;
     display: flex;
     align-items: center;
 
@@ -8,17 +8,29 @@
 
     border-radius: 3px;
 
+    user-select: none;
+
     &:not(:last-of-type) {
         margin-right: 1rem;
     }
 
     &:hover {
-        background-color: rgb(240, 240, 240);
+        color: white;
+        background-color: black;
+        opacity: 0.8;
 
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+
+        transition: all 0s;
     }
 
     svg {
         margin-right: 0.25rem;
+
+        transition: none;
+    }
+
+    span {
+        transition: none;
     }
 }

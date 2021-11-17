@@ -6,7 +6,7 @@ function Banner() {
     return (
         <div className={styles.container}>
             <img src={Woman} alt="" />
-            <span>MY WEBSITE PORTFOLIO</span>
+            <h1>MY WEBSITE PORTFOLIO</h1>
         </div>
     );
 }

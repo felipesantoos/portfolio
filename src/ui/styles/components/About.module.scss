@@ -1,0 +1,86 @@
+.container {
+    max-width: 980px;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+
+    color: #777777;
+    font-family: Lato;
+
+    .top {
+        margin-top: 3rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h1 {
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+
+        span {
+            margin: 2rem 0;
+
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        p {
+            font-family: Lato;
+            text-align: justify;
+            line-height: 1.5;
+        }
+    }
+
+    .center {
+        margin-top: 3rem;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+
+            h4 {
+                margin-bottom: 3rem;
+
+                text-align: center;
+            }
+
+            img {
+                opacity: 0.6;
+                z-index: 0;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        p {
+            line-height: 1.5;
+            text-align: justify;
+        }
+    }
+
+    .bottom {
+        margin-top: 3rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            font-weight: normal;
+            font-size: 1.1rem;
+        }
+
+        .skillsGroup {
+            width: 100%;
+            
+            margin-top: 2rem;
+        }
+    }
+}
