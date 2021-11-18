@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import Header from "../components/Header";
 import Numbers from "../components/Numbers";
 import SecondBanner from "../components/SecondBanner";
+import Work from "../components/Work";
 
 import styles from "../styles/pages/HomePage.module.scss";
 
@@ -14,6 +15,7 @@ function HomePage () {
             <About />
             <Numbers />
             <SecondBanner />
+            <Work />
         </div>
     );
 }

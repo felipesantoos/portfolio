@@ -1,0 +1,55 @@
+.container {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 980px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #777777;
+
+    h1 {
+        margin: 2rem 0;
+    }
+
+    p, span {
+        margin-bottom: 0.5rem;
+        font-style: italic;
+    }
+
+    div {
+        margin-top: 2em;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+
+        img {
+            width: 100%;
+
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.60;
+
+                transition: none;
+            }
+        }
+    }
+
+    button {
+        margin-top: 4rem;
+        padding: 1rem 1.5rem;
+
+        font-size: 1rem;
+
+        border: none;
+
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(200, 200, 200);
+        }
+    }
+}

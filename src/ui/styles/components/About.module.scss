@@ -12,11 +12,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-        h1 {
-            font-size: 1.5rem;
-            font-weight: normal;
-        }
 
         span {
             margin: 2rem 0;
@@ -26,7 +21,6 @@
         }
 
         p {
-            font-family: Lato;
             text-align: justify;
             line-height: 1.5;
         }
