@@ -1,6 +1,9 @@
 import About from "../components/About";
 import Banner from "../components/Banner";
 import Header from "../components/Header";
+import Numbers from "../components/Numbers";
+import SecondBanner from "../components/SecondBanner";
+
 import styles from "../styles/pages/HomePage.module.scss";
 
 function HomePage () {
@@ -9,6 +12,8 @@ function HomePage () {
             <Header />
             <Banner />
             <About />
+            <Numbers />
+            <SecondBanner />
         </div>
     );
 }
