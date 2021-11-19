@@ -13,27 +13,80 @@
         margin: 2rem 0;
     }
 
-    p, span {
+    p,
+    span {
         margin-bottom: 0.5rem;
         font-style: italic;
     }
 
-    div {
+    > div {
         margin-top: 2em;
 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 1rem;
 
-        img {
+        > img {
             width: 100%;
 
             cursor: pointer;
 
             &:hover {
-                opacity: 0.60;
+                opacity: 0.6;
 
                 transition: none;
+            }
+        }
+
+        .modal {
+            width: 100%;
+            height: 100%;
+
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+
+            .content {
+                width: 80%;
+                max-width: 500px;
+                margin: auto;
+
+                animation-name: zoom;
+                animation-duration: 0.6s;
+            }
+
+            @keyframes zoom {
+                from {transform: scale(0);}
+                to {transform: scale(1);}
+            }
+
+            svg {
+                display: inline-block;
+
+                position: absolute;
+                top: 15px;
+                right: 35px;
+                
+                fill: #f1f1f1;
+                font-size: 2.5rem;
+                font-weight: bold;
+                font-style: normal;
+
+                cursor: pointer;
+                transition: 0.3s;
+                user-select: none;
+
+                &:hover {
+                    background-color: red;
+                }
             }
         }
     }
