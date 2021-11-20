@@ -50,8 +50,8 @@ function Work() {
                 <img ref={imgRefList[6]} src={P6} alt="" onClick={() => focus(6)} />
                 <img ref={imgRefList[7]} src={P7} alt="" onClick={() => focus(7)} />
 
-                <div ref={modalRef} className={styles.modal}>
-                    <IoCloseSharp onClick={closeModal} />
+                <div ref={modalRef} onClick={closeModal} className={styles.modal}>
+                    <IoCloseSharp />
                     <img ref={modalImgRef} className={styles.content} />
                 </div>
             </div>

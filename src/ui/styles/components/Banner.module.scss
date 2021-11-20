@@ -15,20 +15,43 @@
         object-fit: cover;
 
         user-select: none;
+
+        &.primary {
+        }
+
+        &.normal {
+            opacity: 0.8;
+
+            &.v1 {
+                object-position: center;
+            }
+
+            &.v2 {
+                object-position: top;
+            }
+        }
     }
 
     h1 {
-        padding: 1rem 1.5rem;
-
         position: absolute;
 
         z-index: 0;
 
         color: white;
-        background-color: black;
-        font-size: 1.5rem;
         font-weight: normal;
-        letter-spacing: 5px;
-        opacity: 0.8;
+
+        &.primary {
+            padding: 1rem 1.5rem;
+            background-color: black;
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+            opacity: 0.8;
+        }
+
+        &.normal {
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+        }
     }
 }
