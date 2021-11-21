@@ -9,6 +9,7 @@ import Blonde from "../../assets/images/blonde.jpg";
 import Photographer from "../../assets/images/photographer.jpg";
 
 import styles from "../styles/pages/HomePage.module.scss";
+import Contact from "../components/Contact";
 
 function HomePage () {
     return (
@@ -35,6 +36,7 @@ function HomePage () {
                 version="v2"
                 text="CONTACT"
             />
+            <Contact />
         </div>
     );
 }

@@ -12,6 +12,7 @@ import P6 from "../../assets/images/p6.jpg";
 import P7 from "../../assets/images/p7.jpg";
 
 import styles from "../styles/components/Work.module.scss";
+import Subtitle from "./Subtitle";
 
 function Work() {
     const modalRef = createRef<HTMLDivElement>();
@@ -38,8 +39,10 @@ function Work() {
     return (
         <div className={styles.container}>
             <Title>MY WORK</Title>
-            <p>Here are some of my latest lorem work ipsum tipsum.</p>
-            <span>Click on the images to make them bigger</span>
+            <Subtitle>
+                Here are some of my latest lorem work ipsum tipsum.<br />
+                Click on the images to make them bigger
+            </Subtitle>
             <div>
                 <img ref={imgRefList[0]} src={P0} alt="" onClick={() => focus(0)} />
                 <img ref={imgRefList[1]} src={P1} alt="" onClick={() => focus(1)} />

@@ -3,6 +3,7 @@ import AvatarHat from "../../assets/images/avatar_hat.jpg";
 
 import styles from "../styles/components/About.module.scss";
 import Skill from "./Skill";
+import Subtitle from "./Subtitle";
 import Title from "./Title";
 
 function About() {
@@ -10,7 +11,7 @@ function About() {
         <div className={styles.container}>
             <div className={styles.top}>
                 <Title>ABOUT ME</Title>
-                <span>I love photography</span>
+                <Subtitle>I love photography</Subtitle>
                 <p>
                     We have created a fictional "personal" website/blog, and our
                     fictional character is a hobby photographer. Lorem ipsum dolor

@@ -10,17 +10,11 @@
     color: #777777;
 
     h1 {
-        margin: 2rem 0;
-    }
-
-    p,
-    span {
-        margin-bottom: 0.5rem;
-        font-style: italic;
+        margin: 2rem 0 0;
     }
 
     > div {
-        margin-top: 2em;
+        margin-top: 1rem;
 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;

@@ -1,0 +1,119 @@
+.container {
+    max-width: 980px;
+    padding: 2rem;
+    margin: 0 auto;
+
+    color: #777777;
+    text-align: center;
+
+    h1 {
+        margin: 2rem 0 1rem;
+    }
+
+    > span {
+        margin: 1rem 0 2rem;
+
+        display: block;
+    }
+
+    > div {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+
+        text-align: left;
+
+        img {
+            width: 100%;
+
+            border-radius: 4px;
+        }
+
+        > div {
+            > div {
+                display: flex;
+                align-items: center;
+
+                margin-top: 0.5rem;
+
+                font-size: 1.15rem;
+
+                svg {
+                    margin-right: 1rem;
+
+                    font-size: 1.5rem;
+                }
+            }
+
+            > span {
+                margin-top: 1rem;
+
+                display: block;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                > div {
+                    display: flex;
+
+                    input {
+                        width: 100%;
+
+                        &:first-of-type {
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+
+                input {
+                    padding: 0.75rem;
+                    margin-top: 1rem;
+                    
+                    font-size: 1rem;
+
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                }
+
+                button {
+                    width: max-content;
+                    margin-top: 1rem;
+                    padding: 0.75rem 1rem;
+
+                    display: flex;
+                    align-items: center;
+
+                    align-self: flex-end;
+
+                    border: none;
+
+                    color: white;
+                    background-color: black;
+                    font-size: 1rem;
+
+                    cursor: pointer;
+                    transition: none;
+
+                    &:hover {
+                        color: black;
+                        background-color: rgb(200, 200, 200);
+
+                        svg {
+                            transition: none;
+                        }
+                    }
+
+                    svg {
+                        margin-top: 0.15rem;
+                        margin-right: 0.25rem;
+
+                        font-size: 1.25rem;
+
+                        transition: none;
+                    }
+                }
+            }
+        }
+    }
+}
