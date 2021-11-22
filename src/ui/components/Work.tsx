@@ -1,4 +1,4 @@
-import React, { createRef, LegacyRef, useEffect, useState } from "react";
+import React, { createRef } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import Title from "./Title";
 
@@ -37,7 +37,7 @@ function Work() {
     }
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="portfolio">
             <Title>MY WORK</Title>
             <Subtitle>
                 Here are some of my latest lorem work ipsum tipsum.<br />
@@ -55,7 +55,7 @@ function Work() {
 
                 <div ref={modalRef} onClick={closeModal} className={styles.modal}>
                     <IoCloseSharp />
-                    <img ref={modalImgRef} className={styles.content} />
+                    <img ref={modalImgRef} className={styles.content} alt="" />
                 </div>
             </div>
             <button>LOAD MORE</button>

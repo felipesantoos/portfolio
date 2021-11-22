@@ -10,10 +10,11 @@ import Photographer from "../../assets/images/photographer.jpg";
 
 import styles from "../styles/pages/HomePage.module.scss";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 function HomePage () {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="home">
             <Header />
             <Banner
                 imgSrc={Woman}
@@ -37,6 +38,7 @@ function HomePage () {
                 text="CONTACT"
             />
             <Contact />
+            <Footer />
         </div>
     );
 }

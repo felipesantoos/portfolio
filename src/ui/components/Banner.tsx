@@ -1,4 +1,3 @@
-import { version } from "process";
 import styles from "../styles/components/Banner.module.scss";
 
 interface BannerProps {

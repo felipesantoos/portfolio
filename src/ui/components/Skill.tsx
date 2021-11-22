@@ -15,6 +15,7 @@ function Skill({ Icon, name, percentage }: SkillProps) {
         if (progressBarRef.current) {
             progressBarRef.current.style.width = percentage + "%";
         }
+        // eslint-disable-next-line
     }, []);
 
     return (

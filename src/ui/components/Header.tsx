@@ -24,13 +24,14 @@ function Header() {
                 }
             }
         });
+        // eslint-disable-next-line
     }, []);
 
     return (
         <header ref={headerRef} className={styles.container}>
             <div>
                 <MenuItem
-                    href="#banner"
+                    href="#home"
                     Icon={ImHome}
                     text="Home"
                 />

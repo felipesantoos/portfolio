@@ -8,7 +8,7 @@ import styles from "../styles/components/Contact.module.scss";
 
 function Contact() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="contact">
             <Title>WHERE I WORK</Title>
             <Subtitle>I'd love your feedback!</Subtitle>
             <div>

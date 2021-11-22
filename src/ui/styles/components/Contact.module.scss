@@ -48,7 +48,12 @@
             > span {
                 margin-top: 1rem;
 
-                display: block;
+                display: flex;
+                align-items: center;
+
+                svg {
+                    margin: 0.3rem 0 0 0.2rem;
+                }
             }
 
             form {

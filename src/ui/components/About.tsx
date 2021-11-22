@@ -1,4 +1,4 @@
-import { BsPersonFill, BsFillCameraFill, BsLaptop, BsCardImage, BsImage } from "react-icons/bs";
+import { BsPersonFill, BsFillCameraFill, BsLaptop, BsImage } from "react-icons/bs";
 import AvatarHat from "../../assets/images/avatar_hat.jpg";
 
 import styles from "../styles/components/About.module.scss";
@@ -8,7 +8,7 @@ import Title from "./Title";
 
 function About() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="about">
             <div className={styles.top}>
                 <Title>ABOUT ME</Title>
                 <Subtitle>I love photography</Subtitle>
