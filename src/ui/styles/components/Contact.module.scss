@@ -75,7 +75,7 @@
                 input {
                     padding: 0.75rem;
                     margin-top: 1rem;
-                    
+
                     font-size: 1rem;
 
                     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -117,6 +117,49 @@
 
                         transition: none;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        > div {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        > div {
+            > div {
+                > span {
+                    align-items: flex-start;
+                }
+            }
+        }
+        > div {
+            form {
+                > div {
+                    width: calc(100vw - 5rem);
+                    flex-direction: column;
+
+                    transition: none;
+
+                    input {
+                        width: 100%;
+
+                        &:first-of-type {
+                            margin-right: 0 !important;
+                        }
+                    }
+                }
+
+                > input {
+                    transition: none;
+                    width: calc(100vw - 5rem);
                 }
             }
         }

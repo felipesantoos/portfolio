@@ -87,6 +87,7 @@
 
     button {
         margin-top: 4rem;
+        margin-bottom: 2rem;
         padding: 1rem 1.5rem;
 
         font-size: 1rem;
@@ -97,6 +98,30 @@
 
         &:hover {
             background-color: rgb(200, 200, 200);
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        > div {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        > div {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        > div {
+            grid-template-columns: 1fr;
         }
     }
 }
