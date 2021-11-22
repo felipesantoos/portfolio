@@ -2,14 +2,14 @@
 Um exemplo de portfólio feito em React e TypeScript.
 
 # Objetivos
-- [ ] Header.
-- [ ] Banner.
-- [ ] About me.
-- [ ] Skills.
-- [ ] Numbers.
-- [ ] My work.
-- [ ] Contact.
-- [ ] Footer.
+- [x] Header.
+- [x] Banner.
+- [x] About me.
+- [x] Skills.
+- [x] Numbers.
+- [x] My work.
+- [x] Contact.
+- [x] Footer.
 
 # Como rodar este projeto
 ```bash
